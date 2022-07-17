@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles\bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <span>erik</span>
+        <span>code</span>
+      </div>
+
+      <aside class="menu-list">
+        <a href="#" class="menu-item">home</a>
+        <a href="#about-me" class="menu-item">about me</a>
+        <a href="#" class="menu-item">skills</a>
+        <a href="#" class="menu-item">projects</a>
+      </aside>
+      <button class="teste">
+        <img src="assets\bars-solid.svg" alt="" />
+      </button>
+    </header>
+    <main class="home" id="home">
+      <div class="container">
+        <article class="presentation">
+          <h2>looking for a front-end dev?</h2>
+        </article>
+        <p>
+          Hello, i'm Erik, a web developer with Angular and Bootstrap knowledge
+        </p>
+        <a href="#">Contact me</a>
+      </div>
+      <div class="profile-img">
+        <img src="assets\Avatar-Maker.png" alt="Profile Image" />
+      </div>
+    </main>
+    <article class="about-me" id="about-me">
+      <div class="about-me-img">
+        <img src="assets\computer.svg" alt="Programmer" />
+      </div>
+      <div class="text1">
+        <h3>Who I am?</h3>
+        <p>
+          I'm a indepedent student who is passionate about technology and and
+          aims to embark professionally in the market
+        </p>
+      </div>
+    </article>
+
+    <article class="skills">
+      <div class="above">
+        <img src="assets\marks.svg" alt="Languages" />
+      </div>
+      <div class="carousel__container">
+        <div class="carousel">
+          <div class="carousel__item carousel__item--visible">
+            <img src="assets\html-and-css.svg" alt="HTML and CSS" />
+          </div>
+          <div class="carousel__item">
+            <img src="assets\jsjsjs.png" alt="Javascript" />
+          </div>
+          <div class="carousel__item">
+            <img src="assets\angular.png" alt="Angular" />
+          </div>
+          <div class="carousel__item">
+            <img src="assets\react.svg" alt="React" />
+          </div>
+
+          <div class="carousel__actions">
+            <button id="carousel__button--prev" aria-label="Previous slide">
+              <
+            </button>
+            <button id="carousel__button--next" aria-label="Next slide">
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">1</div>
+        <div class="col-md-3">2</div>
+        <div class="col-md-3">3</div>
+        <div class="col-md-3">4</div>
+      </div>
+    </div>
+  </body>
+
+  <script src="scripts\script.js"></script>
+  <script src="scripts\bootstrap.min.js"></script>
+</html>

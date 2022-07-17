@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #acdeb2 16.62%, #e1eab5 85.61%);
+}
+
+
+@media (max-width: 800px){
+  .menu-item {
+    display: none;
+  }
+  .teste {
+    display: block;
+    height: 20px;
+    width: 20px;
+    line-height: 60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5%;
+  min-height: 7vh;
+  border-bottom: 1px solid #000;
+  color: #390d2d;
+}
+
+header button {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+}
+
+.logo span {
+  line-height: .8;
+  font-family: 'Lobster', cursive;
+}
+
+.menu-list {
+  height: 100%;
+  justify-content: center;
+  line-height: 55px;
+  min-width: 40%;
+  text-align: right;
+}
+
+.menu-item {
+  padding: 5px 10px;
+  margin-right: 2%;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Lobster', cursive;
+  color: #390d2d;
+  transition: .3s;
+}
+
+.menu-item:hover {
+  color: #292424;
+  text-decoration: underline;
+}
+
+.menu-btn:last-child{
+  margin-right: 0;
+}
+
+.home {
+  position: relative;
+  height: 93vh;
+}
+
+.container {
+  position: absolute;
+  max-width: 100%;
+  top: 25%;
+  left: 3%;
+}
+
+.presentation {
+  font-size: 2.5em;
+  display: inline-block;
+  border-right: 2px solid #000;
+  padding-right: 3px;
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: bar normal infinite .8s, write normal 5s steps(55) both;
+}
+
+.presentation h2 {
+  color: #390d2d;
+}
+
+@keyframes bar {
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes write {
+  100% {
+    max-width: 100%;
+  }
+}
+
+.container p {
+  font-size: 2.5em;
+  max-width: 600px;
+  color: #390d2d;
+  margin: 0;
+}
+
+.container a {
+  position: absolute;
+  top: 120%;
+  text-decoration: none;
+  color: #390d2d;
+  border: 1px solid #390d2d;
+  padding: 1%;
+}
+
+.profile-img {
+
+  position: absolute;
+  right: 3%;
+  top: 25%;
+  animation: animate 3s alternate infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.profile-img img {
+  width: 300px;
+}
+
+.about-me {
+  height: 100vh;
+  position: relative;
+}
+
+.text1 {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+
+.text1 h3 {
+  font-size: 2.5em;
+  color: #390d2d;
+}
+
+.text1 p {
+  margin-top: 5%;
+  font-size: 2.5em;
+  color: #390d2d;
+  max-width: 650px;
+  text-indent: 3ch;
+}
+
+.about-me-img {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+
+}
+
+.about-me-img img {
+  max-width: 400px;
+}
+
+.skills {
+  height: 100vh;
+  position: relative;
+}
+
+.above {
+  width: 100%;
+  text-align: center;
+}
+
+.above img {
+  height: 200px;
+}
+
+.carousel {
+  overflow: hidden;
+  max-width: 600px;
+  position: relative;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+  display: none;
+}
+
+.carousel .carousel__item img {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 400px;
+}
+
+.carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility .5s;
+}
+
+.carousel .carousel__actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel .carousel__actions button#carousel__button--prev {
+  margin-left: 20px;
+}
+
+.carousel .carousel__actions button#carousel__button--next {
+  margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+.carousel__container {
+  margin-top: 5%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
